@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+
+}
+.container.clicked {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+.container.notclicked {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.nav-logo {
+    width: 80%;
+}
+.nav-logo >h1{
+    font-family: 'Kaushan Script', cursive;
+}
+.hero-section {
+    text-align: center;
+    margin: 150px auto;
+}
+.hero-section > h2 {
+    font-size: 40px;
+}
+.hero-section > p {
+    font-size: 30px;
+}
+.hero-section > span {
+    font-size: 25px;
+}
+.btn {
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.view {
+    font-size: 30px;
+    border: 2px solid gold;
+    border-radius: 50%;
+}
+.next-btn {
+    display: none;
+}
+
+
+/* mobile view */
+
+@media (max-width: 500px) {
+    button {
+        display: none;
+    }
+    .next-btn {
+        display: block;
+        padding: 10px 15px;
+        outline: none;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 10px;
+        font-size: 16px;
+        position: absolute;
+        bottom: 5%;
+        left: 70%;
+    }
+    .hero-section {
+        margin: 250px auto;
+    }
+}

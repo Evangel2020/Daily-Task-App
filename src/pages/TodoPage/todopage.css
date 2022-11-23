@@ -1,0 +1,11 @@
+.avater-image {
+    width: 5%;
+}
+
+
+/* mobile screen */
+@media (max-width: 500px) {
+    .avater-image {
+        width: 20%;
+    }
+}
